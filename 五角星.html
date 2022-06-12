@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* 初始化样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 习惯性加版心,并且为所有元素添加相对定位元素ovo */
+
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        /* 五角星的父盒子 */
+        .stara {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 325px;
+            height: 325px;
+            margin: 200px auto;
+        }
+
+        /* 调用动画 */
+        .stara:hover {
+            animation: move 3s infinite;
+        }
+
+        /* 定义动画 */
+        @keyframes move {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+        /* 第一个角-基础样式 */
+        .star-z {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: -85px;
+            top: -60px;
+        }
+        /* 第一个角的右瓣 */
+        .star {
+            position: absolute;
+            left: 240px;
+            top: -140px;
+            margin: 200px auto;
+            width: 0;
+            height: 0;
+            border-bottom: 59px solid transparent;
+            border-top: 123px solid transparent;
+            border-left: 40px solid #f2d661;
+            border-right: 40x solid transparent;
+        }
+          /* 第一个角的左瓣 */
+        .star01 {
+            position: absolute;
+            left: 160px;
+            top: -139px;
+            margin: 200px auto;
+            width: 0;
+            height: 0;
+            border-bottom: 59px solid transparent;
+            border-top: 123px solid transparent;
+            border-right: 40px solid #f3f9ae;
+            border-left: 40px solid transparent;
+        }
+          /* 第二个角 */
+        .star02 {
+            position: absolute;
+            left: -100px;
+            top: -60px;
+            transform: rotate(72deg);
+        }
+          /* 第三个角 */
+        .star03 {
+            position: absolute;
+            left: -108px;
+            top: -74px;
+            transform: rotate(144deg);
+        }
+          /* 第四个角 */
+
+        .star04 {
+            position: absolute;
+            left: -96px;
+            top: -85px;
+            transform: rotate(216deg);
+        }
+          /* 第五个角 */
+        .star05 {
+            position: absolute;
+            left: -84px;
+            top: -77px;
+            transform: rotate(-72deg);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 版心 -->
+    <div class="w">
+        <!-- 父元素 -->
+        <div class="stara">
+            <!-- 第一个角 -->
+            <div class="star-z">
+                <div class="star">
+
+                </div>
+                <div class="star01">
+
+                </div>
+            </div>
+            <!-- 第二个角 -->
+            <div class="star-z star02">
+                <div class="star"></div>
+                <div class="star01"></div>
+            </div>
+             <!-- 第三个角 -->
+            <div class="star-z star03">
+                <div class="star"></div>
+                <div class="star01"></div>
+            </div>
+             <!-- 第四个角 -->
+            <div class="star-z star04">
+                <div class="star"></div>
+                <div class="star01"></div>
+            </div>
+             <!-- 第五个角 -->
+            <div class="star-z star05">
+                <div class="star"></div>
+                <div class="star01"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
